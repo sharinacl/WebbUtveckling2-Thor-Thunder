@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link media="all" href="style.css" rel="stylesheet" />
+        <title>Thor Thunder</title>
+        <script src="https://kit.fontawesome.com/eea5759a2d.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rakkas&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+        <!--Här är jQuery CDN som jag har skapat från nätet-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!--Här är wrappern som finns till varje websidorna-->
+        <div class="containerwrapper">
+            <!--Här är hemsidans header-->
+            <header id="headertop">
+                <div class="logo">
+                    <img src="img/thorthunderpng.png" alt="band-logo" style="width: 40px; height:auto;">
+                    <h2 class="header-h2">THOR THUNDER</h2><!--Den här raden är tillsammans med hemsidans logo-->
+                </div>
+                <div class="imgheader">
+                    <!--Den här raden med thor thunder är den som är används med jQuery effektet som kommer fejda ut i 3 sekunder när musen enter delen av hemsidan #banner-->
+                    <h2 class="header-thor-thunder"><span class="thor">Thor</span>&nbsp;<span class="thunder">Thunder</span></h2>
+                </div>
+            </header><!--header ends-->
+            <!--hemsidans meny| kommer den här delen dölja när hemsidans storlek ändra till mobilens storlek-->
+            <nav id="navid">
+                <ul class="navigation">
+                    <li><a href="index.html">Hem</a></li>
+                    <li class="page_item page-item-445"><a href="om-oss.html">Om oss</a></li>
+                    <li class="page_item page-item-449"><a href="musik.html">Musik</a></li>
+                    <li class="page_item page-item-451"><a href="galleri.html">Galleri</a></li>
+                    <li class="page_item page-item-453"><a href="merch.html">Varor</a></li>
+                </ul>
+            </nav><!--meny end-->
+            <div id="close-open"><!--den här koden är gömd när hemsidan är i normala storlek. Dvs med dator och paddan storleken. Men när storleken blir samma som i mobilen då kommer den här koden synlig. Och detta gjorde jag möjlighet med hjälp av jQuery-->
+                <div id="thorthunderLogo"><h2>ThorThunder</h2></div>
+                <div id="hamburger" tabindex="0"><img id="log" src="img/menypng.png" alt="hamburger menu" tabindex="0"></div>
+                <div id="ex" style="font-size: 20px;">Stäng</div>
+            </div>
+            <div id="banner"><!--koden som finns i alla hemsidor| Används som main content wrapper-->
+                <div class="main-index"><!--Hemsidans index-->
+                    <main>
+                        <section class="index-banner">
+                            <h3 class="hidden">Vi ska turné på sommar!</h3>
+                                <div class="vertical-center">
+                                    <section>
+                                        <h2 class="index-banner-h2">Rock N Roll</h2>
+                                        <h3>Vi ska turé på sommar!</h3><br/>
+                                        <h2 class="index-h2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed venenatis lorem. Fusce id metus euismod, consequat tellus eu, commodo mi.</h2>
+                                    </section>
+                                </div>
+                        </section>
+                    </main><!--main content wrappern sluta här-->
+                </div><!--hemsidans index koden slutar här-->
+            </div>
+            
+            <!--Här delen gjorde jag som hemsidans sidebar.php-->
+            <div class="container1">
+                <!--album music lådan-->
+                <div class="album-container" id="music">
+                    <div class="h3-album">
+                    <h3 class="album-h3">ALBUM</h3>
+                    </div>
+                    <div class="album">
+                        <div class="album-inside">
+                            <p>Album 1 (datum) </p>
+                            <img src="http://localhost/wordpress/wp-content/uploads/2021/09/album1.jpg" alt="a tape" class="album-img">
+                        </div>
+                        <div class="album-inside">
+                            <p>Album 2 (datum) </p>
+                            <img src="http://localhost/wordpress/wp-content/uploads/2021/09/album2.jpg" alt="a tape" class="album-img">
+                        </div>
+                        <div class="album-inside"> 
+                            <p>Album 3 (datum) </p>
+                            <img src="http://localhost/wordpress/wp-content/uploads/2021/09/album3.jpg" alt="a tape" class="album-img">
+                        </div>
+                        <div class="album-inside">
+                            <p>Album 4 (datum) </p>
+                            <img src="http://localhost/wordpress/wp-content/uploads/2021/09/album4.jpg" alt="a tape" class="album-img">
+                        </div>
+                    </div>
+                </div><!--Album music lådan slutar här-->   
+                   
+            </div>
+            <!--Hemsidans kontak lådan-->
+            <div class="container2">
+                <div class="kontakt-container" id="kontakt">
+                    <div class="kontakt-h2" >
+                        <h2 class="cont-h2">Kontakta oss</h2>
+                    </div>
+                    <!--kontakt vänstra sidan-->
+                    <div class="kontakt1">
+                        <div class="kontakt2-address">
+                            <fieldset class="address" style=" background-color: rgba(141, 121, 56, 0.377); border: 1px solid #A87B40;">
+                                <div class="add-cont">
+                                    <h3>Address</h3>
+                                    <p>Chalmersgatan Göteborg</p> 
+                                    <h3>Telefonnummer</h3>
+                                    <p>+460000000</p>
+                                    <h3>Email</h3>
+                                    <p class="pkontakt">kontakt@kontakt.com</p>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <!--kontakta form till höger sidan-->
+                        <div class="kontakt2-form">
+                            <fieldset class="insideformdiv" style=" background-color: rgba(141, 121, 56, 0.377); border: 1px solid #A87B40;">
+                                <form name="forM" action="tack.html" id="theform" onsubmit="return validateForm()" method="post">
+                                    <div class="form">
+                                    <div class="cont">
+                                            <label for="namn">Ditt förnämn:</label>
+                                            <input id="namn" name="name" type="text" placeholder="Förnamn"/>
+                                        </div>
+                                        <div class="cont">
+                                            <label for="efter-namn">Ditt efternämn:</label>
+                                            <input id="efter-namn" name="efternamn" type="text" placeholder="Efternamn"/>
+                                            <small></small>
+                                        </div>
+                                        <div class="cont">
+                                            <label for="emejl">Ditt mail:</label>
+                                            <input id="emejl" name="email" type="email" placeholder="E-postadress"/>
+                                            <small></small>
+                                        </div>
+                                        <div class="cont">
+                                            <label for="mess">Sckika meddelande:</label>
+                                            <textarea id="mess" name="message" placeholder="Meddelandet" ></textarea>
+                                        </div>
+                                        <div class="cont">
+                                            <input class="skickatext" type="submit" value="Skicka meddelandet"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div><!--kontakt lådan slutar här-->
+            <!--Footer lådan| footer-->
+            <div class="footer">
+                <div class="footer-container">
+                    <footer>
+                        <div>
+                            <p class="folj-oss">Följ oss</p>
+                        </div>
+                        <!--hemsidans social-media innanför footer-->
+                        <div class="social-media">
+                                <div class="ao">
+                                    <div class="a">
+                                        <div class="soc-img"><img src="img/youtubepng.png" alt="yuotube logo">
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div class="soc-img"><img src="img/twitpng.png" alt="twitter logo">
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div class="soc-img"><img src="img/spotifypng1.png" alt="spotify">
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div class="soc-img"><img src="img/instagram1.png" alt="instagram logo">
+                                        </div>
+                                    </div>
+                                    <div class="a">
+                                        <div class="soc-img"><img src="img/facebookpng.png" alt="facebook logo">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        <p id="datum"></p>
+                        <p class="p-copyright">Copyright 2021 ©</p>
+                    </footer>
+                </div>
+            </div>
+        </div><!--container wrappern slutar här-->
+        <!--JavaScript och JQuery-->
+        <script defer src="script.js"></script>
+        <script src="jquery.js"></script>
+    </body>
+</html>
